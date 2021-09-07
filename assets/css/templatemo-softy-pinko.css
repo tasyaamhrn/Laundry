@@ -351,10 +351,10 @@ button.main-button {
   border: none;
   cursor: pointer;
   font-size: 13px;
-  margin-left:60%;
+  margin-left:68%;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background-color: #2E8FDA;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -365,7 +365,7 @@ button.main-button {
 }
 
 button.main-button:hover {
-  background-color: #ff589e;
+  background-color: #8FCDED;
 }
 
 
@@ -1419,6 +1419,7 @@ contact
 .contact-form textarea {
   color: #777;
   font-size: 14px;
+  text-align: center;
   border: 1px solid #eee;
   width: 100%;
   height: 50px;
@@ -1430,7 +1431,7 @@ contact
   -moz-appearance: none;
   appearance: none;
   margin-bottom: 30px;
-  margin-left:100%;
+  margin-left:110%;
 }
 
 .contact-form textarea {
@@ -1445,7 +1446,7 @@ footer
 --------------------------------------------- 
 */
 footer {
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  background-image: linear-gradient(127deg, #C4E5F8 0%,  #70BEE8 91%);
   padding-top: 30px;
 }
 
@@ -1461,7 +1462,7 @@ footer .social li {
 }
 
 footer .social li a {
-  color: #9d5bd9;
+  color: #70BEE8;
    text-align: center;
   background-color: #fff;
   width: 36px;
@@ -1477,7 +1478,7 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  background-color: #ff589e;
+  background-color: #396383;
   color: #fff;
 }
 
@@ -1513,7 +1514,7 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(135deg, #a759d1 0%, #8261ee 100%);
+  background-image: linear-gradient(135deg, #BDE2F7 0%, #70BEE8 100%);
   left: 0;
   right: 0;
   top: 0;

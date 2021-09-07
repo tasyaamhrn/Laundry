@@ -351,6 +351,7 @@ button.main-button {
   border: none;
   cursor: pointer;
   font-size: 13px;
+  margin-left:60%;
   border-radius: 20px;
   padding: 12px 20px;
   background-color: #8261ee;
@@ -857,7 +858,8 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/work-process-bg.png);
+  background-color:#8DCCED ;
+  background-image: linear-gradient(to left,#71BFE8,#BFE3F7);
   z-index: 2;
   top: -20%;
   left: -20%;
@@ -1428,6 +1430,7 @@ contact
   -moz-appearance: none;
   appearance: none;
   margin-bottom: 30px;
+  margin-left:100%;
 }
 
 .contact-form textarea {

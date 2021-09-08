@@ -33,6 +33,114 @@ font & reset css
 reset
 --------------------------------------------- 
 */
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+  background: #fff;
+  padding: 60px 0;
+}
+.team .container header{
+  text-align: center;
+}
+
+.team .member {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  transition: 0.3s;
+
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-img:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url(assets/images/team-shape.svg) no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
+}
+#team .container h2{
+  padding-bottom: 50px;
+  color:#3A6C90;
+  font-weight: bold;
+}
+
+
+.team .member .social {
+  position: absolute;
+  right: -100%;
+  top: 30px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: rgba(1, 41, 112, 0.5);
+  margin: 15px 12px;
+  display: block;
+  line-height: 0;
+  text-align: center;
+}
+
+.team .member .social a:hover {
+  color: rgba(1, 41, 112, 0.8);
+}
+
+.team .member .social i {
+  font-size: 18px;
+}
+
+.team .member .member-info {
+  padding: 10px 15px 20px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #3A6C90;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: #5e5e5e;
+}
+
+.team .member:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.team .member:hover .social {
+  right: 8px;
+  opacity: 1;
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -113,12 +221,12 @@ body {
 }
 
 ::selection {
-  background: #ff589e;
+  background: #6EA6EF;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #ff589e;
+  background: #6EA6EF;
   color: #fff;
 }
 
@@ -145,10 +253,10 @@ body {
 }
 
 .left-heading .section-title {
-  font-weight: 500;
+  font-weight: 500 bold;
   font-size: 24px;
   line-height: 42px;
-  color: #1e1e1e;
+  color: #3E7EAC;
   letter-spacing: 0.25px;
   margin-bottom: 30px;
   position: relative;
@@ -179,6 +287,7 @@ body {
   line-height: 28px;
   letter-spacing: 1px;
   margin-bottom: 50px;
+ 
 }
 
 .center-text.colored {
@@ -197,6 +306,24 @@ body {
   color: #777;
   line-height: 28px;
   letter-spacing: 1px;
+  
+}
+#beranda .container .row .left-heading h2{
+  font-weight:bold;
+  color: #3E7EAC;
+  font-size: 250%;
+}
+#features .container .row .left-heading h2{
+  font-weight:bold;
+  color: #3E7EAC;
+  font-size: 250%;
+}
+#beranda .container .row .left-text p{
+ text-align: justify;
+ 
+}
+#features .container .row .left-text p{
+  text-align: justify;
 }
 
 .left-text.light {
@@ -314,7 +441,7 @@ a.main-button-slider {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8FCDED;
+  background-color: #3C6D91;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -391,6 +518,7 @@ header
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   border-radius: 40px;
   min-height: 80px;
+  padding: 0;
   background: #fff;
 }
 
@@ -402,7 +530,15 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   margin-left: 30px;
+  color: #407093;
+
+  
 }
+.logo b{
+  padding-left: 40px;
+
+}
+
 
 .header-area .main-nav .logo img {
   -webkit-transition: all 0.3s ease 0s;
@@ -437,7 +573,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 13px;
-  color: #fff;
+  color: #497698;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -446,10 +582,11 @@ header
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .header-area .main-nav .nav li a:hover {
-  color: #8ECCED;
+  color: #80B4FB;
 }
 
 .header-area .main-nav .menu-trigger {
@@ -557,7 +694,7 @@ header
 }
 
 .header-area.header-sticky .nav li a {
-  color: #1e1e1e;
+  color: #497698;
 }
 
 .header-area.header-sticky .nav li a.active {
@@ -645,12 +782,14 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/banner\ pos.png);
+  background-color: #fff;
+   background-image: url(../images/banner\ pos.png); 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
   height: 100vh;
 }
+
 
 .welcome-area .header-text {
   position: absolute;
@@ -784,7 +923,7 @@ features
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background: #71BFE8;
+  background: #3A6C90;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -793,6 +932,7 @@ features
 .features-small-item .icon i {
   font-size: 18px;
   color: #fff;
+  text-align: center;
 }
 
 .features-small-item .features-title {
@@ -835,7 +975,10 @@ features
     margin-top: 0px;
   }
 }
-
+section .container .row div img{
+  padding-top: 60px;
+ 
+}
 /* 
 ---------------------------------------------
 parallax & home seperator
@@ -858,8 +1001,8 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color:#8DCCED ;
-  background-image: linear-gradient(to left,#71BFE8,#BFE3F7);
+  background-color:#80B4FB ;
+  /* background-image: linear-gradient(to left,#71BFE8,#BFE3F7); */
   z-index: 2;
   top: -20%;
   left: -20%;
@@ -1147,6 +1290,9 @@ team
   transition: all 0.3s ease 0s;
   margin-left: 25px;
   float: left;
+  
+  
+  
 }
 
 .team-item .team-content {
@@ -1177,7 +1323,7 @@ team
   display: block;
   font-weight: 400;
   font-size: 15px;
-  color: #ff589e;
+  color: #3A6C90;
   letter-spacing: 0.25px;
 }
 
@@ -1446,7 +1592,8 @@ footer
 --------------------------------------------- 
 */
 footer {
-  background-image: linear-gradient(127deg, #C4E5F8 0%,  #70BEE8 91%);
+  /* background-image: linear-gradient(127deg, #C4E5F8 0%,  #70BEE8 91%); */
+  background-color: #3A6C90;
   padding-top: 30px;
 }
 
@@ -1454,6 +1601,7 @@ footer .social {
   overflow: hidden;
   margin-top: 10px;
   text-align: center;
+  background-color: #3A6C90;
 }
 
 footer .social li {
@@ -1493,6 +1641,7 @@ footer .copyright {
   color: #fff;
   letter-spacing: 0.88px;
   text-transform: uppercase;
+  background-color: #3A6C90;
 }
 
 @media (max-width: 991px) {

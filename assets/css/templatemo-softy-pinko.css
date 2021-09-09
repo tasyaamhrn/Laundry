@@ -529,13 +529,14 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  margin-left: 30px;
+  margin-left: 45px;
+  
   color: #407093;
 
   
 }
 .logo b{
-  padding-left: 40px;
+  padding-left:10px;
 
 }
 
@@ -545,6 +546,7 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+
 }
 
 .header-area .main-nav .nav {
@@ -720,9 +722,10 @@ header
   }
   .header-area .container {
     padding: 0px;
+    margin-top:-25px;
   }
   .header-area .logo {
-    margin-top: 27px !important;
+    margin-top: 25px !important;
     margin-left: 30px;
   }
   .header-area .menu-trigger {
@@ -978,6 +981,9 @@ features
 section .container .row div img{
   padding-top: 60px;
  
+}
+section .container .row div .main-button-slider{
+  
 }
 /* 
 ---------------------------------------------
